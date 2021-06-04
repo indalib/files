@@ -1,0 +1,14 @@
+---
+title: "gapminderplot"
+author: "Indali Bora"
+date: "6/4/2021"
+output: word_document
+---
+
+```{r}
+library(tidyverse)
+library(ggplot2)
+library(gapminder)
+ggplot(data = gapminder1) +
+  geom_bar(mapping = aes(x = lifeExp, y = country, fill = country), stat = "identity") 
+```
